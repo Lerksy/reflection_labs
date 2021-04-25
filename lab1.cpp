@@ -54,7 +54,7 @@ timeTable::timeTable(){
 }
 
 bool timeTable::addPair(lesson pair){
-    if(listOfPairs.size() <= 5) {
+    if(listOfPairs.size() < 5) {
         listOfPairs.append(pair);
         return true;
     }else return false;
