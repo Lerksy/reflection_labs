@@ -2,6 +2,7 @@
 #include <QMetaObject>
 #include <QMetaMethod>
 #include "lab1.h"
+#include "lab2.h"
 #include <iostream>
 
 int main(int argc, char *argv[])
@@ -34,6 +35,8 @@ int main(int argc, char *argv[])
                               Q_RETURN_ARG(QString, newTimeTableText));
     std::cout<<std::endl<<std::endl<<newTimeTableText.toStdString();
 
+    //lab2 output section
+    QTest::qExec(new lab2);
 
 
     return a.exec();

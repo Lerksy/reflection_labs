@@ -1,5 +1,7 @@
 QT -= gui
 
+QT += testlib
+
 CONFIG += c++11 console
 CONFIG -= app_bundle
 
@@ -9,6 +11,7 @@ CONFIG -= app_bundle
 
 SOURCES += \
         lab1.cpp \
+        lab2.cpp \
         main.cpp
 
 # Default rules for deployment.
@@ -17,4 +20,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
-    lab1.h
+    lab1.h \
+    lab2.h
